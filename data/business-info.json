@@ -1,0 +1,199 @@
+{
+  "company": {
+    "name": "TechMart Solutions",
+    "tagline": "Your Technology Partner",
+    "description": "Leading provider of premium electronics, home goods, and professional services. We've been serving customers since 2015 with quality products and exceptional service.",
+    "founded": "2015",
+    "employees": "150+",
+    "logo": "https://example.com/images/techmart-logo.png"
+  },
+  "contact": {
+    "phone": {
+      "main": "+1-555-TECH-MART",
+      "toll_free": "1-800-TECHMART",
+      "whatsapp": "+1-555-123-4567",
+      "international": "+1-555-123-4567"
+    },
+    "email": {
+      "general": "info@techmartsolutions.com",
+      "support": "support@techmartsolutions.com",
+      "sales": "sales@techmartsolutions.com",
+      "billing": "billing@techmartsolutions.com"
+    },
+    "addresses": {
+      "headquarters": {
+        "street": "123 Business Street",
+        "city": "Tech City",
+        "state": "TC",
+        "zipCode": "12345",
+        "country": "USA",
+        "formatted": "123 Business Street, Tech City, TC 12345, USA"
+      },
+      "showroom": {
+        "street": "456 Display Avenue",
+        "city": "Tech City", 
+        "state": "TC",
+        "zipCode": "12346",
+        "country": "USA",
+        "formatted": "456 Display Avenue, Tech City, TC 12346, USA"
+      },
+      "warehouse": {
+        "street": "789 Logistics Boulevard",
+        "city": "Ship City",
+        "state": "SC",
+        "zipCode": "54321",
+        "country": "USA",
+        "formatted": "789 Logistics Boulevard, Ship City, SC 54321, USA"
+      }
+    }
+  },
+  "businessHours": {
+    "customerService": {
+      "monday": { "open": "09:00", "close": "18:00", "timezone": "EST" },
+      "tuesday": { "open": "09:00", "close": "18:00", "timezone": "EST" },
+      "wednesday": { "open": "09:00", "close": "18:00", "timezone": "EST" },
+      "thursday": { "open": "09:00", "close": "18:00", "timezone": "EST" },
+      "friday": { "open": "09:00", "close": "18:00", "timezone": "EST" },
+      "saturday": { "open": "10:00", "close": "16:00", "timezone": "EST" },
+      "sunday": { "closed": true }
+    },
+    "showroom": {
+      "monday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "tuesday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "wednesday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "thursday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "friday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "saturday": { "open": "10:00", "close": "19:00", "timezone": "EST" },
+      "sunday": { "open": "12:00", "close": "17:00", "timezone": "EST" }
+    },
+    "technicalSupport": {
+      "monday": { "open": "08:00", "close": "20:00", "timezone": "EST" },
+      "tuesday": { "open": "08:00", "close": "20:00", "timezone": "EST" },
+      "wednesday": { "open": "08:00", "close": "20:00", "timezone": "EST" },
+      "thursday": { "open": "08:00", "close": "20:00", "timezone": "EST" },
+      "friday": { "open": "08:00", "close": "20:00", "timezone": "EST" },
+      "saturday": { "open": "09:00", "close": "17:00", "timezone": "EST" },
+      "sunday": { "open": "10:00", "close": "16:00", "timezone": "EST" }
+    }
+  },
+  "socialMedia": {
+    "facebook": "https://facebook.com/techmartsolutions",
+    "twitter": "https://twitter.com/techmartsol",
+    "instagram": "https://instagram.com/techmartsolutions",
+    "linkedin": "https://linkedin.com/company/techmart-solutions",
+    "youtube": "https://youtube.com/c/techmartsolutions",
+    "tiktok": "https://tiktok.com/@techmartsolutions"
+  },
+  "policies": {
+    "shipping": {
+      "freeShippingThreshold": 50.00,
+      "standardShipping": {
+        "cost": 9.99,
+        "deliveryTime": "3-5 business days",
+        "description": "Standard ground shipping via UPS/FedEx"
+      },
+      "expressShipping": {
+        "cost": 19.99,
+        "deliveryTime": "1-2 business days",
+        "description": "Express shipping for urgent orders"
+      },
+      "sameDayDelivery": {
+        "cost": 29.99,
+        "deliveryTime": "Same day",
+        "description": "Available in select metropolitan areas",
+        "cutoffTime": "14:00",
+        "availableCities": ["Tech City", "Metro City", "Business Town"]
+      }
+    },
+    "returns": {
+      "returnWindow": 30,
+      "restockingFee": 0,
+      "freeReturnShipping": true,
+      "returnMethods": ["UPS Drop-off", "Scheduled Pickup", "In-store"],
+      "excludedItems": ["Custom orders", "Perishable items", "Gift cards"],
+      "refundProcessingTime": "3-5 business days"
+    },
+    "warranty": {
+      "electronics": "1 year manufacturer warranty + 90-day TechMart guarantee",
+      "appliances": "2 year manufacturer warranty + 6-month TechMart guarantee", 
+      "furniture": "5 year structural warranty + 1-year TechMart guarantee",
+      "services": "30-day satisfaction guarantee"
+    }
+  },
+  "features": {
+    "services": [
+      "Free product consultations",
+      "Home delivery and setup",
+      "Technical support",
+      "Product training",
+      "Warranty services",
+      "Business solutions",
+      "Bulk order discounts",
+      "Extended warranties"
+    ],
+    "specialOffers": {
+      "newCustomerDiscount": {
+        "percentage": 10,
+        "code": "WELCOME10",
+        "description": "10% off your first order"
+      },
+      "loyaltyProgram": {
+        "name": "TechMart Rewards",
+        "pointsPerDollar": 1,
+        "rewardValue": 0.01,
+        "description": "Earn 1 point per dollar spent, redeem for discounts"
+      },
+      "bulkDiscount": {
+        "threshold": 10,
+        "percentage": 15,
+        "description": "15% off orders of 10 or more items"
+      }
+    }
+  },
+  "departments": [
+    {
+      "id": "sales",
+      "name": "Sales",
+      "description": "Product inquiries, quotes, and order assistance",
+      "phone": "+1-555-123-SALE",
+      "email": "sales@techmartsolutions.com",
+      "available": true
+    },
+    {
+      "id": "support",
+      "name": "Technical Support",
+      "description": "Product setup, troubleshooting, and technical assistance",
+      "phone": "+1-555-123-TECH",
+      "email": "support@techmartsolutions.com",
+      "available": true
+    },
+    {
+      "id": "billing",
+      "name": "Billing & Accounts",
+      "description": "Billing questions, payment issues, and account management",
+      "phone": "+1-555-123-BILL",
+      "email": "billing@techmartsolutions.com",
+      "available": true
+    },
+    {
+      "id": "returns",
+      "name": "Returns & Exchange",
+      "description": "Return processing, exchanges, and refunds",
+      "phone": "+1-555-123-RTRN",
+      "email": "returns@techmartsolutions.com",
+      "available": true
+    }
+  ],
+  "certifications": [
+    "BBB A+ Rating",
+    "ISO 9001:2015 Certified",
+    "Authorized Retailer - Apple, Samsung, Microsoft",
+    "Google Partner",
+    "AWS Select Partner"
+  ],
+  "awards": [
+    "2023 Customer Service Excellence Award",
+    "2022 Best Tech Retailer - Regional Business Journal", 
+    "2021 Innovation in Retail Technology Award"
+  ]
+}

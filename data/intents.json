@@ -1,0 +1,380 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "description": "User greets the bot or starts conversation",
+      "examples": [
+        "hi",
+        "hello",
+        "hey there",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy", 
+        "what's up",
+        "greetings",
+        "yo"
+      ],
+      "responses": [
+        "Hello! 👋 Welcome to TechMart Solutions! I'm here to help you with products, orders, and any questions you have. What can I assist you with today?",
+        "Hi there! 😊 Great to see you! I can help you browse our catalog, track orders, answer questions, or connect you with our team. How can I help?",
+        "Hey! Welcome to TechMart! I'm your virtual assistant, ready to help with anything you need. What brings you here today?"
+      ],
+      "followUp": ["main_menu"]
+    },
+    {
+      "name": "product_inquiry",
+      "description": "User asks about products or wants to browse catalog",
+      "examples": [
+        "show me products",
+        "what do you sell",
+        "I need a laptop",
+        "looking for smartphones",
+        "do you have headphones",
+        "what's on sale",
+        "show catalog",
+        "browse products",
+        "I want to buy something",
+        "what's available",
+        "product search",
+        "show me electronics"
+      ],
+      "entities": ["product_type", "brand", "price_range", "category"],
+      "responses": [
+        "I'd be happy to help you find the perfect product! 🛍️ Here are our main categories:",
+        "Great! Let me show you what we have available. What type of product are you looking for?",
+        "Perfect! We have an amazing selection. Let me help you find exactly what you need!"
+      ],
+      "followUp": ["product_categories", "specific_product"]
+    },
+    {
+      "name": "order_tracking",
+      "description": "User wants to track or check order status",
+      "examples": [
+        "track my order",
+        "where is my package",
+        "order status",
+        "when will my order arrive",
+        "has my order shipped",
+        "delivery update",
+        "check order",
+        "my order number is 12345",
+        "order tracking",
+        "shipping status"
+      ],
+      "entities": ["order_number"],
+      "responses": [
+        "I'll help you track your order! 📦 Could you please provide your order number?",
+        "Let me look up your order status. What's your order number?",
+        "I can definitely check that for you! Please share your order number and I'll get the latest update."
+      ],
+      "followUp": ["order_details"]
+    },
+    {
+      "name": "appointment_booking",
+      "description": "User wants to schedule service or consultation",
+      "examples": [
+        "book appointment",
+        "schedule consultation",
+        "I need setup service",
+        "installation appointment",
+        "when can someone come",
+        "available times",
+        "make appointment",
+        "schedule service",
+        "need technical help",
+        "home visit"
+      ],
+      "entities": ["service_type", "date", "time"],
+      "responses": [
+        "I'd be happy to schedule an appointment for you! 📅 What type of service do you need?",
+        "Great! Let me help you book the right service. What would you like to schedule?",
+        "Perfect! I can check availability for you. What service are you interested in?"
+      ],
+      "followUp": ["service_selection", "date_time_selection"]
+    },
+    {
+      "name": "price_inquiry",
+      "description": "User asks about pricing or costs",
+      "examples": [
+        "how much does it cost",
+        "what's the price",
+        "pricing information",
+        "cost of installation",
+        "how much for shipping",
+        "price list",
+        "what does this cost",
+        "expensive",
+        "cheap options",
+        "budget friendly",
+        "discount available"
+      ],
+      "entities": ["product_name", "service_type"],
+      "responses": [
+        "I can help you with pricing information! 💰 What specific product or service are you interested in?",
+        "Let me get you the latest pricing details. What would you like to know the cost of?",
+        "Sure! I have all our current prices. What are you looking to purchase?"
+      ],
+      "followUp": ["product_details", "quote_generation"]
+    },
+    {
+      "name": "complaint",
+      "description": "User has a complaint or problem",
+      "examples": [
+        "I have a complaint",
+        "this is terrible",
+        "bad service",
+        "not working",
+        "broken product",
+        "unsatisfied",
+        "problem with order",
+        "defective item",
+        "poor quality",
+        "disappointed",
+        "issue with delivery",
+        "wrong item received"
+      ],
+      "entities": ["issue_type", "order_number", "product_name"],
+      "responses": [
+        "I'm really sorry to hear you're having trouble! 😟 I want to help resolve this immediately. Can you tell me more about the issue?",
+        "I apologize for any inconvenience! Let me help fix this right away. What specific problem are you experiencing?",
+        "I understand your frustration and I'm here to help! Please share the details so I can assist you properly."
+      ],
+      "followUp": ["escalate_human", "issue_resolution"]
+    },
+    {
+      "name": "return_request",
+      "description": "User wants to return or exchange an item",
+      "examples": [
+        "I want to return this",
+        "how do I return",
+        "return policy",
+        "exchange item",
+        "refund request",
+        "send back",
+        "return process",
+        "not what I ordered",
+        "wrong size",
+        "changed my mind",
+        "return label"
+      ],
+      "entities": ["order_number", "product_name", "reason"],
+      "responses": [
+        "No problem! I can help you with the return process. 🔄 Do you have your order number handy?",
+        "I'll help you start a return right away. What's your order number and what would you like to return?",
+        "Sure thing! Returns are easy with us. Let me walk you through the process."
+      ],
+      "followUp": ["return_process", "return_label"]
+    },
+    {
+      "name": "payment_inquiry",
+      "description": "User asks about payment methods or billing",
+      "examples": [
+        "payment methods",
+        "how can I pay",
+        "accept credit cards",
+        "payment plan",
+        "financing options",
+        "billing question",
+        "payment failed",
+        "update payment method",
+        "installments available",
+        "pay with paypal"
+      ],
+      "entities": ["payment_type"],
+      "responses": [
+        "We accept many payment methods! 💳 Let me show you all your options.",
+        "Great question! We have flexible payment options including financing. What works best for you?",
+        "I can help with payment information! What specific payment method are you interested in?"
+      ],
+      "followUp": ["payment_methods", "financing_options"]
+    },
+    {
+      "name": "business_hours",
+      "description": "User asks about store hours or availability",
+      "examples": [
+        "what time do you open",
+        "business hours",
+        "when are you open",
+        "store hours", 
+        "what time do you close",
+        "open on weekends",
+        "holiday hours",
+        "available when",
+        "customer service hours"
+      ],
+      "responses": [
+        "Here are our current business hours! 🕐",
+        "I can share our hours with you! Which department are you interested in?",
+        "Let me give you our operating hours!"
+      ],
+      "followUp": ["hours_display"]
+    },
+    {
+      "name": "location_inquiry",
+      "description": "User asks about store location or address",
+      "examples": [
+        "where are you located",
+        "store address",
+        "directions",
+        "how to get there",
+        "physical store",
+        "showroom location",
+        "visit store",
+        "store finder"
+      ],
+      "responses": [
+        "We'd love to see you in person! 📍 Here's our location information:",
+        "Great! We have a showroom where you can see our products. Here's where to find us:",
+        "I can share our address and directions with you!"
+      ],
+      "followUp": ["location_details", "directions"]
+    },
+    {
+      "name": "technical_support",
+      "description": "User needs technical help or support",
+      "examples": [
+        "need technical support",
+        "how do I set this up",
+        "not working properly",
+        "installation help",
+        "troubleshooting",
+        "technical issue",
+        "setup assistance",
+        "product manual",
+        "how to use",
+        "configuration help"
+      ],
+      "entities": ["product_name", "issue_description"],
+      "responses": [
+        "I'm here to help with technical support! 🔧 What product are you having trouble with?",
+        "Let me assist you with that technical issue. Can you describe what's happening?",
+        "Technical support is one of our specialties! What do you need help setting up or fixing?"
+      ],
+      "followUp": ["tech_troubleshooting", "escalate_technical"]
+    },
+    {
+      "name": "human_agent",
+      "description": "User wants to speak with a human representative",
+      "examples": [
+        "speak to human",
+        "talk to person",
+        "human agent",
+        "customer service rep",
+        "live agent",
+        "real person",
+        "transfer to human",
+        "I need help from someone",
+        "connect me to support",
+        "operator"
+      ],
+      "responses": [
+        "Of course! I'll connect you with one of our team members. 👥 Let me transfer you to the right department.",
+        "I'd be happy to connect you with a human agent! What department would be most helpful?",
+        "No problem! Let me get you connected with the right person to help you."
+      ],
+      "followUp": ["department_selection", "agent_transfer"]
+    },
+    {
+      "name": "goodbye",
+      "description": "User wants to end the conversation",
+      "examples": [
+        "goodbye",
+        "bye",
+        "thanks",
+        "that's all",
+        "see you later",
+        "have a good day",
+        "thank you",
+        "done",
+        "nothing else",
+        "all set"
+      ],
+      "responses": [
+        "Thank you for choosing TechMart Solutions! 😊 Have a wonderful day and feel free to message anytime!",
+        "It was great helping you today! Take care and don't hesitate to reach out if you need anything else! 👋",
+        "Thanks for chatting with us! We're always here when you need us. Have an amazing day! ✨"
+      ],
+      "followUp": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "product_type",
+      "values": [
+        "laptop", "smartphone", "tablet", "headphones", "smartwatch", 
+        "camera", "speaker", "monitor", "keyboard", "mouse", "printer",
+        "router", "charger", "case", "screen protector", "furniture",
+        "sofa", "chair", "desk", "tv", "gaming console"
+      ]
+    },
+    {
+      "name": "brand", 
+      "values": [
+        "apple", "samsung", "microsoft", "dell", "hp", "lenovo",
+        "sony", "bose", "lg", "canon", "nike", "adidas"
+      ]
+    },
+    {
+      "name": "price_range",
+      "values": [
+        "under $100", "under $500", "under $1000", "budget", "premium",
+        "expensive", "cheap", "affordable", "high-end", "mid-range"
+      ]
+    },
+    {
+      "name": "category",
+      "values": [
+        "electronics", "clothing", "home", "garden", "services",
+        "accessories", "furniture", "appliances"
+      ]
+    },
+    {
+      "name": "service_type",
+      "values": [
+        "installation", "setup", "consultation", "repair", "training",
+        "maintenance", "troubleshooting", "configuration"
+      ]
+    },
+    {
+      "name": "issue_type",
+      "values": [
+        "defective", "damaged", "wrong item", "late delivery", "missing parts",
+        "poor quality", "not as described", "billing error"
+      ]
+    },
+    {
+      "name": "payment_type",
+      "values": [
+        "credit card", "debit card", "paypal", "apple pay", "google pay",
+        "financing", "installments", "cash", "bank transfer"
+      ]
+    }
+  ],
+  "smallTalk": [
+    {
+      "input": ["how are you", "how's it going", "what's up"],
+      "responses": [
+        "I'm doing great, thank you for asking! 😊 How can I help you today?",
+        "All good here! Ready to help you with anything you need. What's on your mind?",
+        "Fantastic! I'm here and ready to assist. What can I do for you?"
+      ]
+    },
+    {
+      "input": ["what's your name", "who are you", "what are you"],
+      "responses": [
+        "I'm TechMart's virtual assistant! 🤖 I'm here to help you with products, orders, support, and more!",
+        "Hi! I'm your friendly TechMart chatbot assistant. I can help with almost anything related to our products and services!",
+        "I'm the TechMart AI assistant! Think of me as your personal shopping and support helper. 😊"
+      ]
+    },
+    {
+      "input": ["what can you do", "help me", "what are your capabilities"],
+      "responses": [
+        "I can help you with lots of things! 🚀\n• Browse our product catalog\n• Track your orders\n• Answer questions\n• Schedule appointments\n• Process returns\n• Connect you with human agents\n\nWhat would you like to do?",
+        "Great question! I'm here to assist with:\n✅ Product recommendations\n✅ Order tracking\n✅ Technical support\n✅ Booking services\n✅ Returns & exchanges\n✅ General questions\n\nHow can I help you today?"
+      ]
+    }
+  ]
+}
+        

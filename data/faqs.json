@@ -1,0 +1,147 @@
+{
+  "categories": [
+    {
+      "id": "general",
+      "name": "General Information",
+      "icon": "info"
+    },
+    {
+      "id": "orders",
+      "name": "Orders & Shipping",
+      "icon": "package"
+    },
+    {
+      "id": "payments",
+      "name": "Payments & Billing",
+      "icon": "credit-card"
+    },
+    {
+      "id": "returns",
+      "name": "Returns & Exchanges",
+      "icon": "refresh"
+    },
+    {
+      "id": "technical",
+      "name": "Technical Support",
+      "icon": "settings"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "FAQ001",
+      "category": "general",
+      "question": "What are your business hours?",
+      "answer": "We're open Monday to Friday from 9:00 AM to 6:00 PM EST. Our customer service team is available during these hours, but you can message us anytime and we'll respond as soon as possible!",
+      "keywords": ["hours", "open", "closed", "time", "business hours", "schedule"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ002",
+      "category": "general",
+      "question": "Where are you located?",
+      "answer": "Our main office is located at 123 Business Street, Tech City, TC 12345. We also have a showroom where you can see our products in person. Would you like directions or want to schedule a visit?",
+      "keywords": ["location", "address", "where", "office", "showroom", "visit"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ003",
+      "category": "orders",
+      "question": "How can I track my order?",
+      "answer": "You can track your order in several ways:\n1. Reply with your order number and I'll get the latest status\n2. Check the tracking link sent to your email\n3. Log into your account on our website\n\nJust send me your order number and I'll look it up for you!",
+      "keywords": ["track", "tracking", "order status", "delivery", "shipment", "where is my order"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ004",
+      "category": "orders",
+      "question": "How long does shipping take?",
+      "answer": "Shipping times depend on your location and selected method:\n\n🚚 Standard Shipping: 3-5 business days\n⚡ Express Shipping: 1-2 business days\n🚀 Same-day delivery: Available in select cities\n\nFree standard shipping on orders over $50! Where are you located? I can give you a more specific estimate.",
+      "keywords": ["shipping", "delivery", "how long", "fast", "express", "standard", "same day"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ005",
+      "category": "payments",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major payment methods:\n\n💳 Credit/Debit Cards (Visa, MasterCard, American Express)\n📱 Digital Wallets (Apple Pay, Google Pay, PayPal)\n🏦 Bank Transfers\n💰 Buy now, pay later options (Klarna, Afterpay)\n\nAll payments are secured with 256-bit SSL encryption for your safety!",
+      "keywords": ["payment", "pay", "credit card", "paypal", "apple pay", "methods", "how to pay"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ006",
+      "category": "payments",
+      "question": "Do you offer payment plans?",
+      "answer": "Yes! We offer flexible payment options:\n\n📅 Split payments with Klarna (4 interest-free installments)\n💳 Afterpay for purchases $35-$1000\n🏦 12-month financing for purchases over $500\n\nInterested in a payment plan? Tell me what you're looking to buy and I can show you the options!",
+      "keywords": ["payment plan", "installments", "financing", "klarna", "afterpay", "split payment"],
+      "priority": "medium",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ007",
+      "category": "returns",
+      "question": "What is your return policy?",
+      "answer": "We offer a hassle-free 30-day return policy:\n\n✅ 30 days from delivery date\n✅ Items must be unused and in original packaging\n✅ Free return shipping for defective items\n✅ Full refund or exchange available\n\nNeed to return something? I can help you start the process right now!",
+      "keywords": ["return", "refund", "exchange", "policy", "30 days", "money back"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ008",
+      "category": "returns",
+      "question": "How do I return an item?",
+      "answer": "Returning an item is easy:\n\n1️⃣ Tell me your order number and what you want to return\n2️⃣ I'll generate a prepaid return label\n3️⃣ Pack the item in original packaging\n4️⃣ Drop it off at any UPS location\n5️⃣ Get your refund in 3-5 business days\n\nReady to start a return? Just share your order number!",
+      "keywords": ["how to return", "return process", "return label", "refund process"],
+      "priority": "medium",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ009",
+      "category": "technical",
+      "question": "My product isn't working properly",
+      "answer": "I'm sorry to hear you're having issues! Let's troubleshoot:\n\n🔧 What product are you having trouble with?\n🔧 What specific issue are you experiencing?\n🔧 Have you tried restarting/resetting it?\n\nI can walk you through troubleshooting steps, or if it's defective, we'll arrange a replacement right away!",
+      "keywords": ["not working", "broken", "defective", "troubleshoot", "problem", "issue", "help"],
+      "priority": "high",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ010",
+      "category": "technical",
+      "question": "Do you provide technical support?",
+      "answer": "Absolutely! We provide comprehensive technical support:\n\n🛠️ Setup and installation guidance\n📞 Phone support during business hours\n💬 Live chat support (right here!)\n📧 Email support within 24 hours\n🎥 Video tutorials and guides\n\nWhat do you need help with? I'm here to assist you!",
+      "keywords": ["technical support", "help", "setup", "installation", "phone support", "chat support"],
+      "priority": "medium",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ011",
+      "category": "orders",
+      "question": "Can I change or cancel my order?",
+      "answer": "Yes, you can modify your order if it hasn't shipped yet:\n\n✅ Changes allowed within 2 hours of placing order\n✅ Free cancellation before shipping\n✅ Partial cancellation available\n\nTo change your order:\n1. Send me your order number\n2. Tell me what you'd like to change\n3. I'll update it immediately if possible\n\nWhat's your order number?",
+      "keywords": ["change order", "cancel order", "modify", "update order", "edit order"],
+      "priority": "medium",
+      "lastUpdated": "2024-08-01"
+    },
+    {
+      "id": "FAQ012",
+      "category": "general",
+      "question": "Do you have a physical store?",
+      "answer": "Yes! We have a showroom where you can see and test our products:\n\n📍 Address: 123 Business Street, Tech City, TC 12345\n🕘 Hours: Monday-Saturday 10AM-7PM, Sunday 12PM-5PM\n🅿️ Free parking available\n🛍️ Same products as online, plus exclusive in-store demos\n\nWould you like directions or want to schedule an appointment for personalized service?",
+      "keywords": ["physical store", "showroom", "visit", "address", "location", "in person"],
+      "priority": "medium",
+      "lastUpdated": "2024-08-01"
+    }
+  ],
+  "quickReplies": [
+    "Track my order",
+    "Return policy",
+    "Payment methods",
+    "Business hours",
+    "Technical support",
+    "Talk to human"
+  ]
+}

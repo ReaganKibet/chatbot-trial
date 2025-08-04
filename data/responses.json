@@ -1,0 +1,146 @@
+{
+  "welcomeMessages": [
+    {
+      "id": "new_customer",
+      "message": "Welcome to TechMart Solutions! 🎉\n\nI'm your virtual assistant, ready to help you find amazing products and get support whenever you need it!\n\nHere's what I can do for you:\n🛍️ Browse our product catalog\n📦 Track your orders\n🔧 Get technical support\n📅 Schedule appointments\n💬 Answer your questions\n\nWhat would you like to explore today?",
+      "buttons": [
+        "🛍️ Browse Products",
+        "📦 Track Order", 
+        "❓ Ask Question",
+        "📞 Contact Support"
+      ]
+    },
+    {
+      "id": "returning_customer", 
+      "message": "Welcome back to TechMart! 😊\n\nGreat to see you again, {customerName}! I'm here to help with whatever you need.\n\nWhat can I assist you with today?",
+      "buttons": [
+        "🛍️ Shop Again",
+        "📦 Order Status",
+        "🔄 Returns",
+        "💬 Support"
+      ]
+    }
+  ],
+  "menuMessages": {
+    "main_menu": {
+      "message": "Here's what I can help you with today! 📋\n\nChoose an option below or just tell me what you're looking for:",
+      "buttons": [
+        "🛍️ Browse Products",
+        "📦 Track My Order",
+        "❓ Frequently Asked Questions", 
+        "📞 Contact Support",
+        "🏪 Store Information",
+        "🎯 Special Offers"
+      ]
+    },
+    "product_categories": {
+      "message": "Great! Here are our main product categories: 🏷️\n\nWhat type of products are you interested in?",
+      "buttons": [
+        "📱 Electronics",
+        "👕 Clothing & Fashion", 
+        "🏠 Home & Garden",
+        "⚙️ Services",
+        "🔥 Featured Products",
+        "💰 Sale Items"
+      ]
+    },
+    "support_menu": {
+      "message": "I'm here to help! 🛠️\n\nWhat kind of support do you need?",
+      "buttons": [
+        "🔧 Technical Support",
+        "📋 Order Issues",
+        "🔄 Returns & Exchanges",
+        "💳 Billing Questions",
+        "👥 Talk to Human Agent",
+        "📚 Product Manuals"
+      ]
+    }
+  },
+  "confirmationMessages": {
+    "order_tracking": {
+      "found": "Great! I found your order 📦\n\n**Order #{orderNumber}**\nStatus: {status}\nExpected Delivery: {deliveryDate}\nTracking: {trackingNumber}\n\nWould you like me to send you the tracking link or help with anything else?",
+      "not_found": "I couldn't find an order with that number. 😕\n\nPlease double-check your order number, or if you placed the order recently, it might still be processing.\n\nWould you like me to:\n• Connect you with our support team\n• Help you search by email or phone\n• Check recent orders",
+      "buttons": ["📧 Send Tracking Link", "📞 Contact Support", "🔍 Search Again"]
+    },
+    "appointment_booked": {
+      "message": "Perfect! Your appointment has been scheduled! ✅\n\n**Appointment Details:**\n📅 Date: {date}\n🕐 Time: {time}\n⚙️ Service: {service}\n📍 Location: {location}\n\nYou'll receive a confirmation email shortly. We'll also send a reminder 24 hours before your appointment.\n\nIs there anything else I can help you with?",
+      "buttons": ["📧 Email Confirmation", "📅 Add to Calendar", "✏️ Modify Appointment"]
+    },
+    "return_initiated": {
+      "message": "Your return has been initiated! 📦↩️\n\n**Return Details:**\n🆔 Return ID: {returnId}\n📦 Items: {items}\n🏷️ Reason: {reason}\n\nNext steps:\n1. Print your prepaid return label (link below)\n2. Pack items in original packaging\n3. Drop off at any UPS location\n4. Expect refund in 3-5 business days\n\nAnything else I can help with?",
+      "buttons": ["🖨️ Print Label", "📍 Find UPS Location", "💬 Questions"]
+    }
+  },
+  "errorMessages": {
+    "general_error": {
+      "message": "Oops! Something went wrong on my end. 😅\n\nLet me try to help in a different way, or I can connect you with one of our team members who can assist you right away!\n\nWhat would you prefer?",
+      "buttons": ["🔄 Try Again", "👥 Talk to Human", "📞 Call Support"]
+    },
+    "invalid_order_number": {
+      "message": "That doesn't look like a valid order number format. 🤔\n\nOrder numbers are usually 8-10 digits (like #12345678) or include letters (like #ABC12345).\n\nCould you please check and try again?",
+      "buttons": ["🔍 Try Again", "📧 Search by Email", "👥 Get Help"]
+    },
+    "out_of_business_hours": {
+      "message": "Thanks for reaching out! 🌙\n\nOur customer service team isn't available right now, but I'm here 24/7 to help!\n\n**Current time:** {currentTime}\n**Next available:** {nextAvailable}\n\nI can still help with:\n• Product information\n• Order tracking  \n• Basic questions\n• Schedule a callback\n\nWhat can I assist you with?",
+      "buttons": ["📦 Track Order", "🛍️ Browse Products", "📞 Schedule Callback"]
+    }
+  },
+  "escalationMessages": {
+    "transfer_to_human": {
+      "message": "I'll connect you with one of our amazing team members! 👥\n\nTo make sure you get the right help, which department would be best for your needs?",
+      "buttons": [
+        "💼 Sales Team",
+        "🔧 Technical Support", 
+        "📦 Order Support",
+        "💳 Billing Department",
+        "🔄 Returns Team"
+      ]
+    },
+    "agent_busy": {
+      "message": "Our agents are currently helping other customers. 👥⏰\n\n**Estimated wait time:** {waitTime} minutes\n\nWould you like to:\n• Wait for the next available agent\n• Leave a message for a callback\n• Let me try to help you first\n\nWhat works best for you?",
+      "buttons": ["⏳ Wait in Queue", "📞 Request Callback", "🤖 Try Bot Help"]
+    },
+    "callback_scheduled": {
+      "message": "Perfect! I've scheduled a callback for you! 📞\n\n**Callback Details:**\n📱 Phone: {phoneNumber}\n📅 Date: {date}\n🕐 Time: {time}\n📝 Reason: {reason}\n\nOne of our team members will call you within that time window. If you miss the call, we'll try once more and also send a follow-up email.\n\nAnything else I can help with while we wait?",
+      "buttons": ["✏️ Modify Time", "📧 Email Summary", "✅ All Set"]
+    }
+  },
+  "promotionalMessages": {
+    "new_customer_offer": {
+      "message": "🎉 Welcome to TechMart! Special offer just for you!\n\n**NEW CUSTOMER SPECIAL**\n💰 10% OFF your first order\n🚚 FREE shipping (no minimum)\n\nUse code: **WELCOME10**\n⏰ Valid for 7 days\n\nReady to start shopping?",
+      "buttons": ["🛍️ Shop Now", "💾 Save Offer", "📋 View Terms"]
+    },
+    "seasonal_sale": {
+      "message": "🔥 SUMMER TECH SALE! 🔥\n\nHuge savings on electronics:\n📱 Smartphones: Up to 30% off\n💻 Laptops: Up to 25% off\n🎧 Audio: Up to 40% off\n\n⏰ Sale ends in {daysLeft} days!\n\nWhat are you interested in?",
+      "buttons": ["📱 Phone Deals", "💻 Laptop Deals", "🎧 Audio Deals", "👀 See All"]
+    },
+    "loyalty_rewards": {
+      "message": "🌟 You've earned rewards! 🌟\n\n**Your TechMart Rewards:**\n💎 Points Balance: {points} points\n💰 Reward Value: ${rewardValue}\n🎯 Next Tier: {nextTier} ({pointsNeeded} more points)\n\nReady to redeem or keep earning?",
+      "buttons": ["💰 Redeem Points", "🛍️ Earn More", "📊 View History"]
+    }
+  },
+  "helpMessages": {
+    "how_to_order": {
+      "message": "Ordering is super easy! 🛒\n\n**Here's how:**\n1️⃣ Browse products or tell me what you need\n2️⃣ I'll show you options and prices\n3️⃣ Choose your items and quantity\n4️⃣ Provide delivery details\n5️⃣ Choose payment method\n6️⃣ Confirm and done! 🎉\n\nReady to start shopping?",
+      "buttons": ["🛍️ Start Shopping", "💳 Payment Info", "🚚 Shipping Info"]
+    },
+    "shipping_info": {
+      "message": "Here's everything about shipping! 🚚\n\n**Shipping Options:**\n📦 Standard (3-5 days): $9.99\n⚡ Express (1-2 days): $19.99\n🚀 Same-day (select cities): $29.99\n\n**FREE standard shipping on orders $50+!**\n\nWhere are you located? I can give you specific delivery times!",
+      "buttons": ["📍 Enter Location", "💰 Free Shipping Info", "🕐 Delivery Times"]
+    },
+    "payment_methods": {
+      "message": "We accept all major payment methods! 💳\n\n**Payment Options:**\n💳 Credit/Debit Cards (Visa, MC, Amex)\n📱 Digital Wallets (Apple Pay, Google Pay)\n🏦 PayPal & Bank Transfer\n💰 Buy Now, Pay Later (Klarna, Afterpay)\n🏢 Business accounts & Purchase Orders\n\n**All payments are 100% secure! 🔒**\n\nWhat payment method works best for you?",
+      "buttons": ["💳 Credit Card", "📱 Digital Wallet", "💰 Payment Plans"]
+    }
+  },
+  "feedbackMessages": {
+    "satisfaction_survey": {
+      "message": "How was your experience today? 😊\n\nYour feedback helps us improve!\n\nRate your experience:",
+      "buttons": ["⭐⭐⭐⭐⭐ Excellent", "⭐⭐⭐⭐ Good", "⭐⭐⭐ Okay", "⭐⭐ Poor", "💬 Leave Comment"]
+    },
+    "thank_you": {
+      "message": "Thank you for your feedback! 🙏\n\nWe really appreciate you taking the time to help us improve. Your input makes TechMart better for everyone!\n\nIs there anything else I can help you with today?",
+      "buttons": ["🛍️ Continue Shopping", "📞 Contact Support", "👋 All Done"]
+    }
+  }
+}

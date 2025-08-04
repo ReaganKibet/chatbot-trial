@@ -1,0 +1,197 @@
+{
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Electronics",
+      "description": "Latest smartphones, laptops, and gadgets",
+      "image": "https://example.com/images/electronics.jpg"
+    },
+    {
+      "id": "clothing",
+      "name": "Clothing & Fashion",
+      "description": "Trendy apparel for men and women",
+      "image": "https://example.com/images/clothing.jpg"
+    },
+    {
+      "id": "home-garden",
+      "name": "Home & Garden",
+      "description": "Everything for your home and garden needs",
+      "image": "https://example.com/images/home-garden.jpg"
+    },
+    {
+      "id": "services",
+      "name": "Services",
+      "description": "Professional services and consultations",
+      "image": "https://example.com/images/services.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "PHONE001",
+      "name": "iPhone 15 Pro",
+      "category": "electronics",
+      "description": "Latest iPhone with advanced camera system and A17 Pro chip",
+      "price": 999.99,
+      "currency": "USD",
+      "inStock": true,
+      "stockQuantity": 25,
+      "images": [
+        "https://example.com/images/iphone15pro-1.jpg",
+        "https://example.com/images/iphone15pro-2.jpg"
+      ],
+      "specifications": {
+        "storage": "128GB",
+        "color": "Natural Titanium",
+        "warranty": "1 year"
+      },
+      "tags": ["smartphone", "apple", "premium", "camera"],
+      "featured": true,
+      "rating": 4.8,
+      "reviews": 1250
+    },
+    {
+      "id": "LAPTOP001",
+      "name": "MacBook Air M3",
+      "category": "electronics",
+      "description": "Ultra-thin laptop with Apple M3 chip for exceptional performance",
+      "price": 1299.99,
+      "currency": "USD",
+      "inStock": true,
+      "stockQuantity": 15,
+      "images": [
+        "https://example.com/images/macbook-air-m3-1.jpg",
+        "https://example.com/images/macbook-air-m3-2.jpg"
+      ],
+      "specifications": {
+        "processor": "Apple M3",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "screen": "13.6-inch Liquid Retina"
+      },
+      "tags": ["laptop", "apple", "productivity", "portable"],
+      "featured": true,
+      "rating": 4.7,
+      "reviews": 892
+    },
+    {
+      "id": "SHIRT001",
+      "name": "Premium Cotton T-Shirt",
+      "category": "clothing",
+      "description": "Comfortable 100% organic cotton t-shirt available in multiple colors",
+      "price": 29.99,
+      "currency": "USD",
+      "inStock": true,
+      "stockQuantity": 150,
+      "images": [
+        "https://example.com/images/cotton-tshirt-1.jpg",
+        "https://example.com/images/cotton-tshirt-2.jpg"
+      ],
+      "specifications": {
+        "material": "100% Organic Cotton",
+        "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+        "colors": ["White", "Black", "Navy", "Gray", "Red"]
+      },
+      "tags": ["clothing", "cotton", "casual", "unisex"],
+      "featured": false,
+      "rating": 4.5,
+      "reviews": 324
+    },
+    {
+      "id": "SOFA001",
+      "name": "Modern 3-Seat Sofa",
+      "category": "home-garden",
+      "description": "Comfortable modern sofa with premium fabric upholstery",
+      "price": 899.99,
+      "currency": "USD",
+      "inStock": true,
+      "stockQuantity": 8,
+      "images": [
+        "https://example.com/images/modern-sofa-1.jpg",
+        "https://example.com/images/modern-sofa-2.jpg"
+      ],
+      "specifications": {
+        "dimensions": "84\" W x 36\" D x 32\" H",
+        "material": "Premium fabric with hardwood frame",
+        "colors": ["Gray", "Navy", "Beige", "Charcoal"],
+        "assembly": "Required"
+      },
+      "tags": ["furniture", "sofa", "living room", "modern"],
+      "featured": true,
+      "rating": 4.6,
+      "reviews": 156
+    },
+    {
+      "id": "WATCH001",
+      "name": "Smart Fitness Watch",
+      "category": "electronics",
+      "description": "Advanced fitness tracking with heart rate monitor and GPS",
+      "price": 249.99,
+      "currency": "USD",
+      "inStock": false,
+      "stockQuantity": 0,
+      "expectedRestockDate": "2024-08-15",
+      "images": [
+        "https://example.com/images/smart-watch-1.jpg",
+        "https://example.com/images/smart-watch-2.jpg"
+      ],
+      "specifications": {
+        "batteryLife": "7 days",
+        "waterproof": "5ATM",
+        "display": "1.4-inch AMOLED",
+        "connectivity": "Bluetooth 5.0, Wi-Fi"
+      },
+      "tags": ["smartwatch", "fitness", "health", "gps"],
+      "featured": false,
+      "rating": 4.4,
+      "reviews": 523
+    }
+  ],
+  "services": [
+    {
+      "id": "CONSULT001",
+      "name": "Business Consultation",
+      "category": "services",
+      "description": "1-hour business strategy consultation with our experts",
+      "price": 150.00,
+      "currency": "USD",
+      "available": true,
+      "duration": "60 minutes",
+      "bookingRequired": true,
+      "images": [
+        "https://example.com/images/business-consultation.jpg"
+      ],
+      "specifications": {
+        "format": "Online or In-person",
+        "includes": ["Strategy review", "Action plan", "Follow-up email"],
+        "prerequisites": "Business overview document"
+      },
+      "tags": ["consultation", "business", "strategy", "expert"],
+      "featured": true,
+      "rating": 4.9,
+      "reviews": 87
+    },
+    {
+      "id": "INSTALL001",
+      "name": "Home Setup Service", 
+      "category": "services",
+      "description": "Professional installation and setup of electronics and appliances",
+      "price": 99.99,
+      "currency": "USD",
+      "available": true,
+      "duration": "2-3 hours",
+      "bookingRequired": true,
+      "images": [
+        "https://example.com/images/home-setup.jpg"
+      ],
+      "specifications": {
+        "serviceArea": "Within 25 miles",
+        "includes": ["Installation", "Setup", "Basic training"],
+        "warranty": "30-day service guarantee"
+      },
+      "tags": ["installation", "setup", "home service", "electronics"],
+      "featured": false,
+      "rating": 4.7,
+      "reviews": 203
+    }
+  ]
+}
