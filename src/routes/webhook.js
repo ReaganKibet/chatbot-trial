@@ -1,34 +1,30 @@
 // ================================
-// src/routes/webhook.js - WhatsApp Webhook Routes
+// src/routes/webhook.js - Twilio Webhook Routes (FIXED)
 // ================================
-// Express routes for WhatsApp webhook verification and message handling
 const express = require('express');
 const router = express.Router();
 const webhookController = require('../controllers/webhookController');
-const { body, validationResult } = require('express-validator');
 
-// Webhook verification (GET) - for initial setup
-router.get('/', webhookController.verifyWebhook.bind(webhookController));
+// Twilio webhook message handling (POST) - This is what Twilio uses
+router.post('/', webhookController.handleWebhook.bind(webhookController));
 
-// Webhook message handling (POST)
-router.post('/', 
-  // Request validation
-  [
-    body('object').equals('whatsapp_business_account'),
-    body('entry').isArray().notEmpty()
-  ],
-  async (req, res) => {
-    // Check validation results
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      console.error('❌ Webhook validation failed:', errors.array());
-      return res.status(400).json({ errors: errors.array() });
-    }
+// Optional: Simple GET endpoint for testing connectivity
+router.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    service: 'Twilio WhatsApp Webhook',
+    message: 'Webhook endpoint is ready for POST requests',
+    timestamp: new Date().toISOString()
+  });
+});
 
-    // Handle webhook
-    await webhookController.handleWebhook(req, res);
-  }
-);
+// Health check
+router.get('/health', (req, res) => {
+  res.status(200).json({ 
+    status: 'OK', 
+    service: 'Twilio WhatsApp Chatbot',
+    timestamp: new Date().toISOString()
+  });
+});
 
 module.exports = router;
-

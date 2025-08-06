@@ -1,0 +1,115 @@
+ [
+      {
+        "id": "CUST001",
+        "phoneNumber": "+1234567890",
+        "name": "John Smith",
+        "email": "john.smith@email.com",
+        "status": "active",
+        "preferences": {
+          "language": "en",
+          "categories": ["electronics", "services"],
+          "priceRange": {
+            "min": 100,
+            "max": 2000
+          },
+          "brands": ["apple", "samsung"],
+          "notifications": {
+            "orderUpdates": true,
+            "promotions": true,
+            "newProducts": false
+          }
+        },
+        "conversationHistory": [
+          {
+            "timestamp": "2024-08-01T10:30:00Z",
+            "message": "Hi, I'm looking for a new laptop",
+            "intent": "product_inquiry",
+            "response": "I'd be happy to help you find the perfect laptop! What's your budget and main use case?",
+            "satisfaction": 5
+          },
+          {
+            "timestamp": "2024-08-01T10:32:00Z", 
+            "message": "Budget around $1500, for work and light gaming",
+            "intent": "product_inquiry",
+            "response": "Perfect! Let me show you some great options in that range...",
+            "satisfaction": 5
+          }
+        ],
+        "orders": ["ORD12345678", "ORD23456789"],
+        "totalSpent": 2599.98,
+        "loyaltyPoints": 260,
+        "createdAt": "2024-01-15T09:00:00Z",
+        "lastActive": "2024-08-01T10:32:00Z"
+      },
+      {
+        "id": "CUST002", 
+        "phoneNumber": "+1987654321",
+        "name": "Sarah Johnson",
+        "email": "sarah.j@email.com",
+        "status": "active",
+        "preferences": {
+          "language": "en",
+          "categories": ["home-garden", "clothing"],
+          "priceRange": {
+            "min": 50,
+            "max": 1000
+          },
+          "brands": ["modern-home", "comfort-brand"],
+          "notifications": {
+            "orderUpdates": true,
+            "promotions": false,
+            "newProducts": true
+          }
+        },
+        "conversationHistory": [
+          {
+            "timestamp": "2024-07-28T14:15:00Z",
+            "message": "I need to return my sofa order",
+            "intent": "return_request", 
+            "response": "I can help you with that return! Let me look up your order details.",
+            "satisfaction": 4
+          }
+        ],
+        "orders": ["ORD34567890"],
+        "totalSpent": 899.99,
+        "loyaltyPoints": 90,
+        "createdAt": "2024-07-20T11:30:00Z",
+        "lastActive": "2024-07-28T14:15:00Z"
+      },
+      {
+        "id": "CUST003",
+        "phoneNumber": "+1555123456", 
+        "name": "Mike Chen",
+        "email": "mike.chen@email.com",
+        "status": "active",
+        "preferences": {
+          "language": "en",
+          "categories": ["electronics"],
+          "priceRange": {
+            "min": 200,
+            "max": 5000
+          },
+          "brands": ["apple", "sony", "samsung"],
+          "notifications": {
+            "orderUpdates": true,
+            "promotions": true,
+            "newProducts": true
+          }
+        },
+        "conversationHistory": [
+          {
+            "timestamp": "2024-08-02T16:45:00Z",
+            "message": "Track order ORD45678901",
+            "intent": "order_tracking",
+            "response": "Your order is currently in transit and will arrive tomorrow!",
+            "satisfaction": 5
+          }
+        ],
+        "orders": ["ORD45678901", "ORD56789012"],
+        "totalSpent": 3299.97,
+        "loyaltyPoints": 330,
+        "createdAt": "2024-03-10T08:20:00Z",
+        "lastActive": "2024-08-02T16:45:00Z"
+      }
+    ]
+  

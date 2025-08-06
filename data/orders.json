@@ -1,0 +1,95 @@
+ [
+    {
+      "id": "ORD12345678",
+      "customerId": "CUST001",
+      "status": "delivered",
+      "items": [
+        {
+          "productId": "LAPTOP001", 
+          "name": "MacBook Air M3",
+          "quantity": 1,
+          "price": 1299.99,
+          "total": 1299.99
+        }
+      ],
+      "subtotal": 1299.99,
+      "shipping": 0.00,
+      "tax": 104.00,
+      "total": 1403.99,
+      "shippingAddress": {
+        "name": "John Smith",
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "ST",
+        "zipCode": "12345",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card",
+      "trackingNumber": "1Z999AA1234567890",
+      "orderDate": "2024-07-25T09:30:00Z",
+      "shippedDate": "2024-07-26T14:20:00Z",
+      "deliveredDate": "2024-07-28T11:45:00Z"
+    },
+    {
+      "id": "ORD23456789",
+      "customerId": "CUST001", 
+      "status": "delivered",
+      "items": [
+        {
+          "productId": "PHONE001",
+          "name": "iPhone 15 Pro", 
+          "quantity": 1,
+          "price": 999.99,
+          "total": 999.99
+        }
+      ],
+      "subtotal": 999.99,
+      "shipping": 0.00,
+      "tax": 80.00,
+      "total": 1079.99,
+      "shippingAddress": {
+        "name": "John Smith",
+        "street": "123 Main St", 
+        "city": "Anytown",
+        "state": "ST",
+        "zipCode": "12345",
+        "country": "USA"
+      },
+      "paymentMethod": "apple_pay",
+      "trackingNumber": "1Z999AA1234567891",
+      "orderDate": "2024-06-15T16:20:00Z",
+      "shippedDate": "2024-06-16T10:30:00Z", 
+      "deliveredDate": "2024-06-18T15:10:00Z"
+    },
+    {
+      "id": "ORD34567890",
+      "customerId": "CUST002",
+      "status": "return_requested",
+      "items": [
+        {
+          "productId": "SOFA001",
+          "name": "Modern 3-Seat Sofa",
+          "quantity": 1,
+          "price": 899.99,
+          "total": 899.99
+        }
+      ],
+      "subtotal": 899.99,
+      "shipping": 0.00,
+      "tax": 72.00,
+      "total": 971.99,
+      "shippingAddress": {
+        "name": "Sarah Johnson",
+        "street": "456 Oak Avenue", 
+        "city": "Hometown",
+        "state": "HT",
+        "zipCode": "67890",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card",
+      "trackingNumber": "1Z999AA1234567892",
+      "orderDate": "2024-07-20T12:00:00Z",
+      "shippedDate": "2024-07-22T09:15:00Z",
+      "deliveredDate": "2024-07-24T14:45:00Z"
+    }
+  ]

@@ -1,38 +1,83 @@
 // ================================
-// src/routes/admin.js - Admin Panel Routes
+// src/routes/admin.js - Admin Routes
 // ================================
-// Routes for the admin dashboard interface
 const express = require('express');
 const router = express.Router();
-const path = require('path');
 
-// Serve admin panel static files
-router.use('/static', express.static(path.join(__dirname, '../../admin-panel/public')));
+// Import services with correct relative paths
+const analyticsService = require('../services/analyticsService');
+const catalogService = require('../services/catalogService');
+const queueService = require('../services/queueService');
 
-// Admin dashboard home
+// Import models
+const Customer = require('../models/Customer');
+const Product = require('../models/Product');
+const Conversation = require('../models/Conversation');
+
+// Admin dashboard
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../admin-panel/views/dashboard.html'));
+  res.json({ 
+    message: 'Admin panel',
+    status: 'active',
+    timestamp: new Date().toISOString()
+  });
 });
 
-// Customer management page
-router.get('/customers', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../admin-panel/views/customers.html'));
+// Analytics endpoint
+router.get('/analytics', async (req, res) => {
+  try {
+    // Add your analytics logic here
+    res.json({ 
+      message: 'Analytics data',
+      data: {
+        totalCustomers: 0,
+        totalProducts: 0,
+        totalConversations: 0
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
-// Product management page
-router.get('/products', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../admin-panel/views/products.html'));
+// Customers management
+router.get('/customers', async (req, res) => {
+  try {
+    // Add your customer management logic here
+    res.json({ 
+      message: 'Customer management',
+      customers: []
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
-// Analytics page
-router.get('/analytics', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../admin-panel/views/analytics.html'));
+// Products management
+router.get('/products', async (req, res) => {
+  try {
+    // Add your product management logic here
+    res.json({ 
+      message: 'Product management',
+      products: []
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
-// Conversations page
-router.get('/conversations', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../admin-panel/views/conversations.html'));
+// Queue management
+router.get('/queue', async (req, res) => {
+  try {
+    // Add your queue management logic here
+    res.json({ 
+      message: 'Queue management',
+      queue: []
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
+// Export the router
 module.exports = router;
-
