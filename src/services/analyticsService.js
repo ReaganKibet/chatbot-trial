@@ -9,6 +9,14 @@ const Product = require('../models/Product');
 class AnalyticsService {
   constructor() {
     this.events = []; // In-memory event storage for real-time analytics
+    this.metrics = {
+      totalMessages: 0,
+      totalUsers: 0,
+      activeConversations: 0,
+      popularIntents: {},
+      responseTime: [],
+      errorCount: 0
+    };
   }
 
   // Track custom events
@@ -319,6 +327,56 @@ class AnalyticsService {
       console.error('Error generating daily report:', error);
       return null;
     }
+  }
+
+  trackMessage(phoneNumber, message, intent = 'unknown') {
+    this.metrics.totalMessages++;
+    
+    // Track intent popularity
+    if (this.metrics.popularIntents[intent]) {
+      this.metrics.popularIntents[intent]++;
+    } else {
+      this.metrics.popularIntents[intent] = 1;
+    }
+    
+    console.log(`📊 Message tracked: ${intent} from ${phoneNumber}`);
+  }
+
+  trackUser(phoneNumber) {
+    // In a real app, you'd check if user exists in database
+    this.metrics.totalUsers++;
+    console.log(`👤 New user tracked: ${phoneNumber}`);
+  }
+
+  trackError(error) {
+    this.metrics.errorCount++;
+    console.log(`❌ Error tracked: ${error.message}`);
+  }
+
+  trackResponseTime(startTime) {
+    const responseTime = Date.now() - startTime;
+    this.metrics.responseTime.push(responseTime);
+    console.log(`⏱️ Response time: ${responseTime}ms`);
+  }
+
+  getMetrics() {
+    return {
+      ...this.metrics,
+      averageResponseTime: this.metrics.responseTime.length > 0 
+        ? this.metrics.responseTime.reduce((a, b) => a + b, 0) / this.metrics.responseTime.length 
+        : 0
+    };
+  }
+
+  reset() {
+    this.metrics = {
+      totalMessages: 0,
+      totalUsers: 0,
+      activeConversations: 0,
+      popularIntents: {},
+      responseTime: [],
+      errorCount: 0
+    };
   }
 }
 
