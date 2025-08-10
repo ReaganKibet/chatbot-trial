@@ -34,4 +34,4 @@ coverage/
 *.tgz
 
 # Ignore local test files
-test-env.js
+test-env.js.env
